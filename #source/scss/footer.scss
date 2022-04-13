@@ -1,0 +1,107 @@
+.footer {
+    background-image: url(../img/Footer.png);
+    background-size: cover;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    &__content-contact {
+        max-width: 280px;
+        height: 234px;
+        margin-top: 16px;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    &__contact-title {
+        height: 90px;
+        font-family: "GeorgiaRegular";
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 138%;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__content-info {
+        display: flex;
+    }
+    
+    &__email-link {
+        margin-right: 20px;
+    }
+
+    &__info-text {
+        height: 23px;
+        font-family: "GeorgiaRegular";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 168%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+    }
+
+    &__number-link{
+        margin-right: 20px;
+    }
+
+    &__content-location {
+        max-width: 302px;
+        height: 234px;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+
+    &__location-title {
+        height: 90px;
+        font-family: "GeorgiaRegular";
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__location-adress {
+        display: flex;
+        align-items: center;
+    }
+
+    &__adress-icon-marker {
+        margin-right: 20px;
+    }
+
+    &__adress-text1 {
+        font-family: "GeorgiaRegular";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 111%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+        margin-left: 19px;
+    }
+
+    &__adress-text2 {
+        font-family: "GeorgiaRegular";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+    }
+
+    &__content-puppy {
+        margin-right: 40px;
+    }
+
+
+}

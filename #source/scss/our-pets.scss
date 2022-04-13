@@ -1,0 +1,267 @@
+@import "fonts.scss";
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    position: sticky;
+    top:0;
+    background-color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+
+	&__left {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+	}
+
+	&__logo-title {
+        font-family: "GeorgiaRegular";
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: 2px;
+        color: rgba(84, 84, 84, 1);
+	}
+
+	&__logo-subtitle {
+        font-family: "ArialRegular";
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 1.3px;
+        color: #292929;
+        margin-top: 10px;
+        margin-left: 5px;
+	}
+
+	&__rigth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+	}
+
+	&__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+
+    &__item {
+        padding-left: 36px;
+        margin-top: -5px;
+	}
+
+	&__item-link { 
+        font-family: "ArialRegular";
+        font-size: 15px;
+        line-height: 160%;
+        color: rgba(84, 84, 84, 1);
+	}
+
+    &__item-link:hover { 
+        font-family: "ArialRegular";
+        font-size: 15px;
+        line-height: 160%;
+        color: rgba(41, 41, 41, 1);
+	}
+
+
+    &__item-link:active { 
+        border-bottom: 2px solid #F1CDB3;
+        padding-bottom: 2px; 
+	}
+}
+
+.item-ourpets {
+    border-bottom: 2px solid #F1CDB3;
+    padding-bottom: 2px;   
+}
+
+.pets {
+    background-color: #F6F6F6;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        margin: 85px auto 100px;
+    }
+
+    &__heading-text {
+        font-family: "GeorgiaRegular";
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        max-width: 400px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-top: -4px;
+    }
+
+    &__cards-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 40px 40px;
+    }
+
+    &__button {
+        margin: 0 -5px;
+    }
+}
+
+.pets-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 270px;
+    height: 435px;
+    background-color: #fff;
+    border-radius: 9px;
+    margin-top: 24px;
+
+    &__description-text{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(250, 250, 250, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__pets-name {
+        font-family: "GeorgiaRegular";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 1.4px;
+        text-align: center;
+    }
+
+    &__learn-more-button {
+        margin-top: 30px;
+        height: 53px;
+        width: 193px;
+        border: 2px solid #f1cdb3;
+        background-color: rgba(250, 250, 250, 1);
+        border-radius: 100px;
+        padding: 16px 45px 16px 45px;
+        text-align: center;
+        font-family: "GeorgiaRegular";
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.9px;
+        cursor: pointer;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover .pets-box__description-text {
+        background-color: #fff; 
+    }
+
+    &:hover .pets-box__learn-more-button{
+        background-color:rgba(253, 220, 196, 1);
+        border-color: rgba(253, 220, 196, 1);
+    }
+}
+
+.pets-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    max-width: 340px;
+}
+
+.left-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 100px;
+    padding: 23px 19px 23px 19px;
+    width: 52px;
+    height: 52px;
+    border: 2px solid rgba(241, 205, 179, 1);
+    background-color: rgba(241, 205, 179, 1);
+    cursor: pointer;
+}
+
+.left-button:disabled {
+    border: 2px solid rgba(205, 205, 205, 1);
+    background-color: rgba(246, 246, 246, 1);
+    color: rgba(205, 205, 205, 1);
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 23px 19px 23px 19px;
+    width: 52px;
+    height: 52px;
+    background-color: rgba(246, 246, 246, 1);
+    border: 2px solid rgba(241, 205, 179, 1);
+    cursor: pointer;
+}
+
+.center-button:disabled {
+    border: 2px solid rgba(241, 205, 179, 1);
+    background-color: rgba(241, 205, 179, 1);
+    color: #000;
+}
+
+// .center-button:hover {
+//     border: 3px solid rgba(253, 220, 196, 1);
+//     background-color: rgba(253, 220, 196, 1);
+// }
+
+.center-button:active {
+    border: 2px solid rgba(241, 205, 179, 1);
+    background-color: rgba(241, 205, 179, 1);
+}
+
+.right-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 100px;
+    padding: 23px 19px 23px 19px;
+    width: 52px;
+    height: 52px;
+    background-color: rgba(246, 246, 246, 1);
+    border: 2px solid rgba(241, 205, 179, 1);
+    cursor: pointer;
+}
+
+.right-button:hover {
+    border: 2px solid rgba(253, 220, 196, 1);
+    background-color: rgba(253, 220, 196, 1);
+}
+
+.right-button:active {
+    border: 2px solid rgba(241, 205, 179, 1);
+    background-color: rgba(241, 205, 179, 1);
+}
