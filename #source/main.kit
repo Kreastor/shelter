@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -22,6 +23,9 @@
                             <h6 class="menu__left--subtitle">Shelter for pets in Boston</h6>
                         </div>
                     </a> 
+                    <div class="menu__burger">
+                        <span class="menu__burger-button"></span>      
+                    </div>
                     <nav class="menu__right">
                         <ul class="menu__right--list">
                             <li class="menu__right--item">
@@ -31,10 +35,10 @@
                                 <a class="menu__right--link" href="our-pets.html">Our pets</a>
                             </li>
                             <li class="menu__right--item">
-                                <a class="menu__right--link" href="index.html#help">Help the shelter</a>
+                                <a class="menu__right--link" id="LinkHelp" href="index.html#help">Help the shelter</a>
                             </li>
                             <li class="menu__right--item">
-                                <a class="menu__right--link" href="index.html#footer">Contacts</a>
+                                <a class="menu__right--link" id="LinkContacts" href="index.html#footer">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -74,38 +78,107 @@
                 <div class="pets__title">
                     <h1 class="pets__title--text">Our friends who <br> are looking for a house</h1>
                 </div>
-                <div class="pets__slider">
-                    <button class="pets__slider--arrow-←"> ← </button>
-                    <div class="pets__pets-container">
-                        <div class="pets-box">
-                            <div class="pets-box__description-img">
-                                <img class="pets-box__pets-img" src="img/pets-katrine.png" alt="pets-img">
-                            </div>
-                            <div class="pets-box__description-text">
-                                <h3 class="pets-box__pets-name">Katrine</h3>
-                                <button class="pets-box__learn-more-button">Learn more</button>
-                            </div>
-                        </div>
-                        <div class="pets-box">
-                            <div class="pets-box__description-img">
-                                <img class="pets-box__pets-img" src="img/pets-jennifer.png" alt="pets-img">
-                            </div>
-                            <div class="pets-box__description-text">
-                                <h3 class="pets-box__pets-name">Jennifer</h3>
-                                <button class="pets-box__learn-more-button">Learn more</butoon>
+                <div class="swiper-button-prev">←</div>
+                <div class="swiper-button-next">→</div>
+                <div class="name-swiper swiper">
+                    <div class="name-swiper__wraper swiper-wrapper">
+                        <div data-hash="slide-1"  class="name-swiper__slide swiper-slide">
+                            <div class="pets-box Katrine-box" id="Katrine-box">
+                                <div class="pets-box__description-img swiper-zoom-container">
+                                    <img class="pets-box__pets-img swiper-lazy" data-src="img/pets-katrine.png" src="img/cross.svg" alt="pets-img">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="pets-box__description-text">
+                                    <h3 class="pets-box__pets-name">Katrine</h3>
+                                    <button class="pets-box__learn-more-button">Learn more</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="pets-box">
-                            <div class="pets-box__description-img">
-                                <img class="pets-box__pets-img" src="img/pets-woody.png" alt="pets-img">
+                        <div data-hash="slide-2" class="name-swiper__slide swiper-slide">
+                            <div class="pets-box Jennifer-box">
+                                <div class="pets-box__description-img">
+                                    <img class="pets-box__pets-img swiper-lazy" data-src="img/pets-jennifer.png" src="img/cross.svg" alt="pets-img">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="pets-box__description-text">
+                                    <h3 class="pets-box__pets-name">Jennifer</h3>
+                                    <button class="pets-box__learn-more-button">Learn more</button>
+                                </div>
                             </div>
-                            <div class="pets-box__description-text">
-                                <h3 class="pets-box__pets-name">Woody</h3>
-                                <button class="pets-box__learn-more-button">Learn more</butoon>
+                        </div>
+                        <div data-hash="slide-3" class="name-swiper__slide swiper-slide">
+                            <div class="pets-box Woody-box">
+                                <div class="pets-box__description-img">
+                                    <img class="pets-box__pets-img swiper-lazy" data-src="img/pets-woody.png" src="img/cross.svg" alt="pets-img">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="pets-box__description-text">
+                                    <h3 class="pets-box__pets-name">Woody</h3>
+                                    <button class="pets-box__learn-more-button">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-hash="slide-4" class="name-swiper__slide swiper-slide">
+                            <div class="pets-box Sophia-box">
+                                <div class="pets-box__description-img">
+                                    <img class="pets-box__pets-img swiper-lazy" data-src="img/pets-sophia.png" src="img/cross.svg" alt="pets-img">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="pets-box__description-text">
+                                    <h3 class="pets-box__pets-name">Sophia</h3>
+                                    <button class="pets-box__learn-more-button">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-hash="slide-5" class="name-swiper__slide swiper-slide">
+                            <div class="pets-box Timmy-box">
+                                <div class="pets-box__description-img">
+                                    <img class="pets-box__pets-img swiper-lazy" data-src="img/Timmy.png" src="img/cross.svg" alt="pets-img">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="pets-box__description-text">
+                                    <h3 class="pets-box__pets-name">Timmy</h3>
+                                    <button class="pets-box__learn-more-button">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-hash="slide-6" class="name-swiper__slide swiper-slide">
+                            <div class="pets-box Charly-box">
+                                <div class="pets-box__description-img">
+                                    <img class="pets-box__pets-img swiper-lazy" data-src="img/pets-charly.png" src="img/cross.svg" alt="pets-img">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="pets-box__description-text">
+                                    <h3 class="pets-box__pets-name">Charly</h3>
+                                    <button class="pets-box__learn-more-button">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-hash="slide-7" class="name-swiper__slide swiper-slide">
+                            <div class="pets-box Scarlett-box">
+                                <div class="pets-box__description-img">
+                                    <img class="pets-box__pets-img swiper-lazy" data-src="img/pets-scarlet.png" src="img/cross.svg" alt="pets-img">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="pets-box__description-text">
+                                    <h3 class="pets-box__pets-name">Scarlett</h3>
+                                    <button class="pets-box__learn-more-button">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-hash="slide-8" class="name-swiper__slide swiper-slide">
+                            <div class="pets-box Freddie-box">
+                                <div class="pets-box__description-img">
+                                    <img class="pets-box__pets-img swiper-lazy" data-src="img/pets-freddie.png" src="img/cross.svg" alt="pets-img">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                                <div class="pets-box__description-text">
+                                    <h3 class="pets-box__pets-name">Freddie</h3>
+                                    <button class="pets-box__learn-more-button">Learn more</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="pets__slider--arrow-→"> → </button>
                 </div>
                 <a class="pets__primary" href="our-pets.html">Get to know the rest</a>
             </div>
@@ -168,7 +241,7 @@
                     <article class="donation__article">
                         <h1 class="donation__heading">You can also make a donation</h1>
                         <h2 class="donation__subheading">Name of the bank / Type of bank account</h2>
-                        <a class="donation__credit-card--number" href="#">
+                        <a class="donation__credit-card--number" href="#no_scroll">
                             <div class="donation__credit-card">
                                 <img class="donation__credit-card--img" src="img/credit-card.svg" alt="credit-card">
                                 <span class="donation__credit-card--number">8380 2880 8028 8791 7435</span> 
@@ -181,5 +254,283 @@
         </div>
     </section>
     <!-- @import "footer.html" -->
+    <div class="burger-inner">
+        <div class="burger-inner__comeback"></div>
+        <div class="burger-inner__container">
+            <div class="burger-inner__top">
+                <a class="burger-inner__logo" href="index.html">
+                    <div class="burger-inner__logo-container">
+                        <h1 class="burger-inner__logo-container-title">Cozy House</h1>
+                        <h6 class="burger-inner__logo-container-subtitle">Shelter for pets in Boston</h6>
+                    </div>
+                </a> 
+                <div class="burger-inner__burger-container">
+                    <span class="burger-inner__burger-container-button"></span>      
+                </div>
+            </div>
+            <div class="burger-inner__contant">
+                <nav class="burger-inner__menu">
+                    <ul class="burger-inner__menu-list">
+                        <li class="burger-inner__menu-item">
+                            <a class="burger-inner__menu-link item-ourpets" href="index.html">About the shelter</a>
+                        </li>
+                        <li class="burger-inner__menu-item">
+                            <a class="burger-inner__menu-link" href="our-pets.html">Our pets</a>
+                        </li>
+                        <li class="burger-inner__menu-item">
+                            <a class="burger-inner__menu-link" id="LinkHelp320" href="index.html#help">Help the shelter</a>
+                        </li>
+                        <li class="burger-inner__menu-item">
+                            <a class="burger-inner__menu-link" id="LinkContacts320" href="index.html#footer">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+<!-- ____________________________________________________________ -->
+    <div class="pets-popup" id="Katrine">
+        <div class="pets-popup__frame">
+            <button class="pets-popup__close-button"> 
+                <img class="pets-popup__close-button-icon" src="img/cross.svg" alt="cross.svg"></img>
+            </button>
+            <div class="pets-popup__img-container">
+                <img class="pets-popup__img" src="img/pets-katrine.png" alt="pets-img">
+            </div>
+            <div class="pets-popup__article">
+                <div class="pets-popup__article-content">
+                    <div class="pets-popup__heading">
+                        <h3 class="pets-popup__heading-name">Katrine</h3>
+                        <h4 class="pets-popup__heading-subname">Cat - British Shorthair</h4>
+                    </div>
+                    <div class="pets-popup__description">
+                        <p class="pets-popup__description-text">Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.</p>
+                    </div>
+                    <div class="pets-popup__data">
+                        <ul class="pets-popup__list">
+                            <li class="pets-popup__item"><strong>Age:</strong> 2 months</li>
+                            <li class="pets-popup__item"><strong>Inoculations:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Diseases:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Parasites:</strong> none</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pets-popup" id="Jennifer">
+        <div class="pets-popup__frame">
+            <button class="pets-popup__close-button"> 
+                <img class="pets-popup__close-button-icon" src="img/cross.svg" alt="cross.svg"></img>
+            </button>
+            <div class="pets-popup__img-container">
+                <img class="pets-popup__img" src="img/pets-jennifer.png" alt="pets-img">
+            </div>
+            <div class="pets-popup__article">
+                <div class="pets-popup__article-content">
+                    <div class="pets-popup__heading">
+                        <h3 class="pets-popup__heading-name">Jennifer</h3>
+                        <h4 class="pets-popup__heading-subname">Dog - Labrador</h4>
+                    </div>
+                    <div class="pets-popup__description">
+                        <p class="pets-popup__description-text">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                    </div>
+                    <div class="pets-popup__data">
+                        <ul class="pets-popup__list">
+                            <li class="pets-popup__item"><strong>Age:</strong> 2 months</li>
+                            <li class="pets-popup__item"><strong>Inoculations:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Diseases:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Parasites:</strong> none</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pets-popup" id="Sophia">
+        <div class="pets-popup__frame">
+            <button class="pets-popup__close-button"> 
+                <img class="pets-popup__close-button-icon" src="img/cross.svg" alt="cross.svg"></img>
+            </button>
+            <div class="pets-popup__img-container">
+                <img class="pets-popup__img" src="img/pets-sophia.png" alt="pets-img">
+            </div>
+            <div class="pets-popup__article">
+                <div class="pets-popup__article-content">
+                    <div class="pets-popup__heading">
+                        <h3 class="pets-popup__heading-name">Sophia</h3>
+                        <h4 class="pets-popup__heading-subname">Dog - Shih tzu</h4>
+                    </div>
+                    <div class="pets-popup__description">
+                        <p class="pets-popup__description-text">Sophia here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.</p>
+                    </div>
+                    <div class="pets-popup__data">
+                        <ul class="pets-popup__list">
+                            <li class="pets-popup__item"><strong>Age:</strong> 2 months</li>
+                            <li class="pets-popup__item"><strong>Inoculations:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Diseases:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Parasites:</strong> none</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pets-popup" id="Woody">
+        <div class="pets-popup__frame">
+            <button class="pets-popup__close-button"> 
+                <img class="pets-popup__close-button-icon" src="img/cross.svg" alt="cross.svg"></img>
+            </button>
+            <div class="pets-popup__img-container">
+                <img class="pets-popup__img" src="img/pets-woody.png" alt="pets-img">
+            </div>
+            <div class="pets-popup__article">
+                <div class="pets-popup__article-content">
+                    <div class="pets-popup__heading">
+                        <h3 class="pets-popup__heading-name">Woody</h3>
+                        <h4 class="pets-popup__heading-subname">Dog - Golden Retriever</h4>
+                    </div>
+                    <div class="pets-popup__description">
+                        <p class="pets-popup__description-text">Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.</p>
+                    </div>
+                    <div class="pets-popup__data">
+                        <ul class="pets-popup__list">
+                            <li class="pets-popup__item"><strong>Age:</strong> 2 months</li>
+                            <li class="pets-popup__item"><strong>Inoculations:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Diseases:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Parasites:</strong> none</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pets-popup" id="Scarlett">
+        <div class="pets-popup__frame">
+            <button class="pets-popup__close-button"> 
+                <img class="pets-popup__close-button-icon" src="img/cross.svg" alt="cross.svg"></img>
+            </button>
+            <div class="pets-popup__img-container">
+                <img class="pets-popup__img" src="img/pets-scarlet.png" alt="pets-img">
+            </div>
+            <div class="pets-popup__article">
+                <div class="pets-popup__article-content">
+                    <div class="pets-popup__heading">
+                        <h3 class="pets-popup__heading-name">Scarlett</h3>
+                        <h4 class="pets-popup__heading-subname">Dog - Jack Russell Terrier</h4>
+                    </div>
+                    <div class="pets-popup__description">
+                        <p class="pets-popup__description-text">Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.</p>
+                    </div>
+                    <div class="pets-popup__data">
+                        <ul class="pets-popup__list">
+                            <li class="pets-popup__item"><strong>Age:</strong> 2 months</li>
+                            <li class="pets-popup__item"><strong>Inoculations:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Diseases:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Parasites:</strong> none</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pets-popup" id="Timmy">
+        <div class="pets-popup__frame">
+            <button class="pets-popup__close-button"> 
+                <img class="pets-popup__close-button-icon" src="img/cross.svg" alt="cross.svg"></img>
+            </button>
+            <div class="pets-popup__img-container">
+                <img class="pets-popup__img" src="img/Timmy.png" alt="pets-img">
+            </div>
+            <div class="pets-popup__article">
+                <div class="pets-popup__article-content">
+                    <div class="pets-popup__heading">
+                        <h3 class="pets-popup__heading-name">Timmy</h3>
+                        <h4 class="pets-popup__heading-subname">Cat - British Shorthair</h4>
+                    </div>
+                    <div class="pets-popup__description">
+                        <p class="pets-popup__description-text">Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.</p>
+                    </div>
+                    <div class="pets-popup__data">
+                        <ul class="pets-popup__list">
+                            <li class="pets-popup__item"><strong>Age:</strong> 2 months</li>
+                            <li class="pets-popup__item"><strong>Inoculations:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Diseases:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Parasites:</strong> none</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pets-popup" id="Freddie">
+        <div class="pets-popup__frame">
+            <button class="pets-popup__close-button"> 
+                <img class="pets-popup__close-button-icon" src="img/cross.svg" alt="cross.svg"></img>
+            </button>
+            <div class="pets-popup__img-container">
+                <img class="pets-popup__img" src="img/pets-freddie.png" alt="pets-img">
+            </div>
+            <div class="pets-popup__article">
+                <div class="pets-popup__article-content">
+                    <div class="pets-popup__heading">
+                        <h3 class="pets-popup__heading-name">Freddie</h3>
+                        <h4 class="pets-popup__heading-subname">Cat - British Shorthair</h4>
+                    </div>
+                    <div class="pets-popup__description">
+                        <p class="pets-popup__description-text">Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.</p>
+                    </div>
+                    <div class="pets-popup__data">
+                        <ul class="pets-popup__list">
+                            <li class="pets-popup__item"><strong>Age:</strong> 2 months</li>
+                            <li class="pets-popup__item"><strong>Inoculations:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Diseases:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Parasites:</strong> none</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="pets-popup" id="Charly">
+        <div class="pets-popup__frame">
+            <button class="pets-popup__close-button"> 
+                <img class="pets-popup__close-button-icon" src="img/cross.svg" alt="cross.svg"></img>
+            </button>
+            <div class="pets-popup__img-container">
+                <img class="pets-popup__img" src="img/pets-charly.png" alt="pets-img">
+            </div>
+            <div class="pets-popup__article">
+                <div class="pets-popup__article-content">
+                    <div class="pets-popup__heading">
+                        <h3 class="pets-popup__heading-name">Charly</h3>
+                        <h4 class="pets-popup__heading-subname">Dog - Jack Russell Terrier </h4>
+                    </div>
+                    <div class="pets-popup__description">
+                        <p class="pets-popup__description-text">This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.</p>
+                    </div>
+                    <div class="pets-popup__data">
+                        <ul class="pets-popup__list">
+                            <li class="pets-popup__item"><strong>Age:</strong> 2 months</li>
+                            <li class="pets-popup__item"><strong>Inoculations:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Diseases:</strong> none</li>
+                            <li class="pets-popup__item"><strong>Parasites:</strong> none</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"> </script> 
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/popup.js"> </script> 
 </body>
 </html>
